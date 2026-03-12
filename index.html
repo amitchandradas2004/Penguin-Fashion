@@ -10,6 +10,14 @@
       type="text/css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,13 +46,12 @@
       .roboto {
         font-family: "Roboto", sans-serif;
         font-optical-sizing: auto;
-        font-style: normal;
         font-variation-settings: "wdth" 100;
       }
     </style>
   </head>
   <body>
-    <header>
+    <header class="bg-[#FFFBF0] pb-10">
       <nav class="bg-base-300 py-2 border-b-2 border-gray-200 px-2 md:px-0">
         <div class="container mx-auto flex justify-between items-center">
           <div class="flex items-center">
@@ -109,6 +116,32 @@
           </div>
         </div>
       </nav>
+
+      <!-- Hero -->
+      <section>
+        <div
+          class="flex flex-col-reverse md:flex-row justify-between gap-5 container mx-auto items-center px-2 md:px-0 pt-10"
+        >
+          <div>
+            <h2 class="bebas text-[80px]">
+              <span class="text-[#FABE4C]">Be the Penguins</span><br />of Winter
+            </h2>
+            <p class="italic roboto pr-10">
+              Click the Buy Now button to add this jacket to your cart
+              instantly. Review your selected items anytime and proceed to
+              checkout when you're ready.
+            </p>
+            <button class="btn bg-[#A4BC46] text-white mt-5">
+              <i
+                class="fa-solid fa-cart-shopping fa-beat"
+                style="color: rgb(255, 255, 255)"
+              ></i>
+              BUY NOW
+            </button>
+          </div>
+          <div><img src="./assets/images/model.png" alt="" /></div>
+        </div>
+      </section>
     </header>
   </body>
 </html>
