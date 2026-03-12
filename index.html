@@ -43,5 +43,72 @@
       }
     </style>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav class="bg-base-300 py-2 border-b-2 border-gray-200 px-2 md:px-0">
+        <div class="container mx-auto flex justify-between items-center">
+          <div class="flex items-center">
+            <img src="./assets/icons/Frame.png" alt="" />
+            <h2 class="text-2xl bebas">
+              <span class="text-[#A4BC46]">Penguin</span> Fashion
+            </h2>
+          </div>
+          <div class="items-center">
+            <div class="flex gap-5 roboto font-semibold hidden md:inline-flex">
+              <h4>Home</h4>
+              <h4>Product</h4>
+              <h4>About us</h4>
+              <h4>Contact us</h4>
+            </div>
+            <!-- Sidebar -->
+            <div class="inline-block md:hidden">
+              <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+              <div class="drawer-content flex flex-col">
+                <!-- Navbar -->
+                <div class=" ">
+                  <div class="flex-none">
+                    <label
+                      for="my-drawer-2"
+                      aria-label="open sidebar"
+                      class="btn btn-square btn-ghost"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        class="inline-block h-6 w-6 stroke-current"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16"
+                        ></path>
+                      </svg>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="drawer-side">
+                <label
+                  for="my-drawer-2"
+                  aria-label="close sidebar"
+                  class="drawer-overlay"
+                ></label>
+                <ul
+                  class="menu bg-base-200 min-h-100 w-50 p-5 gap-2 rounded-r-2xl mt-5"
+                >
+                  <!-- Sidebar content here -->
+                  <li class="btn rounded-full btn-neutral">Home</li>
+                  <li class="btn btn-neutral rounded-full">Product</li>
+                  <li class="btn btn-neutral rounded-full">About us</li>
+                  <li class="btn btn-neutral rounded-full">Contact us</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
